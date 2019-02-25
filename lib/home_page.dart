@@ -1,3 +1,4 @@
+import 'package:dio_library_example/screens/get_movies_page.dart';
 import 'package:dio_library_example/utils/colors.dart';
 import 'package:flutter/material.dart';
 
@@ -13,6 +14,23 @@ class _HomePageState extends State<HomePage> {
       appBar: AppBar(
         title: Text('Flutter Dio Example'),
         backgroundColor: primaryDarkColor,
+      ),
+      body: Center(
+        child: new Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.center,
+          children: <Widget>[
+            new RaisedButton(
+              onPressed: () {
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => new GetMoviesPage()));
+              },
+              child: new Text('GET API CALL'),
+            )
+          ],
+        ),
       ),
     );
   }
