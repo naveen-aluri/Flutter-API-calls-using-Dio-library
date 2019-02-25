@@ -1,6 +1,7 @@
-# Flutter make API calls using Dio library.
+# Flutter API calls using Dio library.
 
-A new Flutter application.
+Dio is a powerful http client library.
+This repository explains how to use Dio library.
 
 ## Getting Started
 
